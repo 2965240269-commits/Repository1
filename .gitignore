@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+*.npm
+*.yarn
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Output
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+*.tmp
+
+# Result files
+results/
+examples/results/
+temp/
+
+# Processed images
+examples/images/processed/

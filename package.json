@@ -1,0 +1,36 @@
+{
+  "name": "image-to-text-plugin",
+  "version": "1.0.0",
+  "description": "图片转文字插件 - 支持多语言 OCR 识别",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node examples/basic-example.js",
+    "test": "jest",
+    "dev": "nodemon examples/basic-example.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": [
+    "OCR",
+    "image-to-text",
+    "tesseract",
+    "text-recognition",
+    "中文识别",
+    "多语言"
+  ],
+  "author": "2965240269-commits",
+  "license": "MIT",
+  "dependencies": {
+    "tesseract.js": "^5.0.0",
+    "sharp": "^0.33.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.50.0",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

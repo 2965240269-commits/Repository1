@@ -1,0 +1,48 @@
+{
+  "engine": "tesseract",
+  "languages": [
+    "eng",
+    "chi_sim",
+    "chi_tra",
+    "jpn",
+    "kor",
+    "fra",
+    "deu",
+    "spa",
+    "rus"
+  ],
+  "preprocessing": {
+    "resize": true,
+    "resizeMaxWidth": 4000,
+    "resizeMaxHeight": 4000,
+    "contrast": true,
+    "denoise": true,
+    "grayscale": true,
+    "autoRotate": true
+  },
+  "ocr": {
+    "tesseract": {
+      "tessdataUrl": "https://github.com/naptha/tessdata",
+      "workerPath": "./node_modules/tesseract.js/dist"
+    },
+    "baidu": {
+      "apiEndpoint": "https://aip.baidubce.com/rest/2.0/ocr/v1/general",
+      "timeout": 30000
+    },
+    "tencent": {
+      "region": "ap-beijing",
+      "timeout": 30000
+    }
+  },
+  "output": {
+    "format": "text",
+    "saveMetadata": true,
+    "prettyPrint": true
+  },
+  "performance": {
+    "batchSize": 5,
+    "maxConcurrent": 3,
+    "timeout": 60000
+  },
+  "debug": false
+}
